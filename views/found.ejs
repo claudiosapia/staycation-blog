@@ -1,0 +1,41 @@
+
+
+<%- include('./partials/head'); %>
+<body>
+ <%- include('./partials/navbar'); %>
+      <!-- title, author, description, location, url, dateStart, dateEnd, files, trimmedText, key -->
+
+ <div class="jumbotron bg-transparent found ">
+ 
+    <p class="author">Author: <%=found.author %></p>
+    
+     <h1 class="title"><%=found.title%></h1>
+     <br><br>   
+     
+      <p class="description"><%=found.description%></p>
+      <br><br>
+      <h5> Staycation Duration:</h5> <br>
+      <p>From:</p>
+      <p><%=found.dateStart%></p>
+      <p>To:</p>
+      <p><%=found.dateEnd%></p>
+      <h1 class="title">Staycation Pictures</h1> <br>
+      <img class= "blog-img" src="<%=found.url%>" alt="">
+       
+
+      <img class= "blog-img" src="<%=found.files[0]%>" alt="img">
+
+
+ </div>
+             <% for(i=0; i=found.length; i++){ %>
+                 <img src="<%=found[i].files %>" alt="">
+                 <% }%>
+            
+
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+
+<%- include('./partials/head'); %>
+
+<body>
+
+    <%- include('./partials/navbar'); %><br>    
+      <h1 class="staycation-title">Staycation Blogs</h1>
+     
+    <div class="jumbotron bg-transparent div-intro " ><img class="logo" src="/public/img/logo.png" alt="">
+
+    </div>
+    <a class="publish" href="/write"><h3 class="publish">Click here to publish YOUR story</h3></a>
+    <div class="jumbotron bg-transparent ">
+      <p class="staycation-p"> Staycation Stories</p>
+
+</div>
+<main>
+    <div class="row top-b justify-content-center">
+      <% for(i=0; i<blogContent.length; i++) { %>
+
+        <div class="col-auto mb-3">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="<%= blogContent[i].url %>" alt="Card image cap">
+            <div class="card-body">
+                <h5 class="card-title"><%=blogContent[i].title %></h5>
+              <p class="card-text"><%= blogContent[i].author%></p>
+              <p class="card-text"><%= blogContent[i].dateStart%></p>
+              <p class="card-text"><%= blogContent[i].location%></p>
+              <p class="card-text"><%= blogContent[i].trimmedText%>...</p>
+
+              <a href="<%=blogContent[i].key %>" class="btn btn-primary">Read</a>
+            </div>
+          </div>
+        </div>
+    
+      
+      <%}%>
+  
+      <div class=" top-b row justify-content-center">
+          <div class="col-auto mb-3">
+          <div class="card" style="width: 18rem;">
+              <img class="card-img-top" src="https://images.unsplash.com/photo-1584291507637-b497c99902cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=375&q=80" alt="Card image cap">
+              <div class="card-body">
+                  <h5 class="card-title">My Staycation in Catania </h5>
+                <p class="card-text">Giovanni Giuffrida</p>
+                <p class="card-text">2019-11-23T14:26</p>
+                <p class="card-text">Catania, Italy</p>
+                <p class="card-text"> Not only Mount Etna...</p>
+  
+                <a href="catania" class="btn btn-primary bt-dis">Read</a>
+              </div>
+            </div>
+          </div>
+      
+
+          <div class="row justify-content-center">
+            <div class="col-auto mb-3">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="https://images.pexels.com/photos/2333081/pexels-photo-2333081.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                <div class="card-body">
+                    <h5 class="card-title">Staycation in Edinburgh </h5>
+                  <p class="card-text">John Doe</p>
+                  <p class="card-text">2020-09-23T14:26</p>
+                  <p class="card-text">Edinburgh, UK</p>
+                  <p class="card-text"> A Pictruresque...</p>
+                  <a  href="edinburgh" class="btn btn-primary bt-dis">Read</a>
+                </div>
+              </div>
+            </div>
+         
+
+            <div class="row justify-content-center">
+              <div class="col-auto mb-3">
+              <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" src="https://images.pexels.com/photos/2804038/pexels-photo-2804038.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                  <div class="card-body">
+                      <h5 class="card-title">Staycation in Singapore </h5>
+                    <p class="card-text">John Smith</p>
+                    <p class="card-text">2020-03-23T12:26</p>
+                    <p class="card-text">Singapore, Malaysia</p>
+                    <p class="card-text"> Stunning!! During the...</p>
+                    <a  href="catania" class="btn btn-primary bt-dis">Read</a>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+</main>
+
+
+<footer>
+    <%- include('./partials/footer'); %>
+</footer>
+
+</body>
+</html>

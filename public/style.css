@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+nav{
+    width: 100%;
+    background: #D38312;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #A83279, #D38312);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #A83279, #D38312); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    
+}
+
+.navbar-nav{
+    font-size: 1.1em;
+}
+
+.link1{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 4em;
+
+}
+
+
+.link2{
+    color: white;
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4em;
+
+}
+
+.rounded-circle{
+    max-width: 130%;
+}
+
+.write-tellus{
+    margin-top: 1em;
+    font-family: 'Lobster', cursive;
+    font-size: 5em;
+    color: rgba(32, 149, 170, 0.876);
+    text-shadow: 2.5px 3px #050508;}
+
+.img-d{
+    margin-top: 2em;
+    
+}
+
+
+.cont{
+    max-width: 80%;
+    height: auto;
+     margin: auto;
+     background: rgb(24, 34, 34);
+     background-repeat: space;
+     background-size: 60% 50%;
+     background-repeat:space;
+     background-image: url(./img/logo2xtratransparent.png);
+    color: white;
+     border-radius: 2%;
+     border: solid 4px;
+     border-color: black;
+     
+}
+
+.main-write{
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(./img/pexels-salvatore-ventura-4963106.jpg);
+}
+
+.bg-write{
+  border-radius: 60%;
+   width: 100%;
+   height: 100%;
+  border: solid rgb(35, 96, 114) 2px;
+}
+
+
+
+.title{
+    margin-top: 1em;
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+}
+
+.lead{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    font-weight: bolder;
+
+}
+.author{
+    font-family: 'Inconsolata', monospace;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.description{
+    font-family: 'Inconsolata', monospace;
+    margin: 2em 0 2em 0;
+    font-weight: 400;
+}
+
+
+
+
+.blog-img{
+    margin-top: 2em;
+   width: 50%;
+   height: 50%;
+}
+
+
+/* index */
+
+.staycation-title {
+    letter-spacing: 0.2em;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 1em;
+    font-family: 'Bebas Neue', cursive;
+    
+}
+
+.staycation-p{
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 2em;
+   margin-top: 3em;
+   margin-bottom: 1em;
+}
+
+.div-intro{
+    text-align: center;   
+}
+.logo{
+    max-width: 14%;
+    max-height: 14%;
+}
+
+
+.publish{
+    margin-top: 0 em;
+    color: red;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-decoration:none !important;
+    text-shadow: 1px 2px #050508;
+    letter-spacing: 2px;
+
+}
+
+.publish:hover{
+    text-shadow: 2.5px 3px #f00a0a;
+
+    text-decoration: none;
+    color: rgb(7, 31, 250);
+    text-decoration:none !important;
+}
+
+/* FOOTER */
+
+footer{
+    margin-top: 6em;
+    text-align: center;
+    background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.logo-ft{
+    margin-top: 2em;
+   max-width: 40%;
+   max-height: 40%;
+}
+
+ul{
+    list-style: none;
+   line-height: 3;
+   margin-top: 2em;
+}
+
+.about-footer{
+    font-family: 'Inconsolata', monospace;
+    margin-top: 2em;
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+ li a{
+    font-family: 'Lobster', cursive;
+    color:rgb(251, 54, 27); 
+    text-decoration:none;
+    font-size: 1.6em;
+
+}
+
+li a:hover{
+    color: brown;
+    text-decoration:none;
+}
+
+
+/* FOUND */
+.found{
+    background-image: url(/public/img/logo2xtratransparent.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;   
+}
+.card-img-top{
+  
+    max-width: 350px;
+    max-height: 360px;
+}
+
+.card-body{
+    min-height: 280px;
+    max-width: 650px;
+    max-height: 280px;
+    text-align: center;
+    
+}
+
+.top-b {
+     margin-top:5em; 
+}
